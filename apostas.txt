@@ -1,0 +1,3 @@
+0;Victoria;10.0;Dados;Perdeu;09/12/2025 21:42
+0;luis0923;122.0;Dados;Saldo Insuficiente;10/12/2025 17:43
+0;luis0923;1000.0;Dados;Perdeu;10/12/2025 17:46

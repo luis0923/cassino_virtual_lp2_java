@@ -26,7 +26,7 @@ public class Main {
 
         while (usuario == null) {
             System.out.println("\n--- LOGIN ---");
-            System.out.print("Digite seu nome (ou 'admin'): ");
+            System.out.print("Digite seu usuario para acessar: ");
             String login = sc.nextLine().trim();
 
             if (login.isEmpty()) {
@@ -49,9 +49,9 @@ public class Main {
 
             if (encontrado != null) {
                 usuario = encontrado;
-                System.out.println("Bem-vindo, " + usuario.getNome() + "!");
+                System.out.println("Bem-vindo ao cassino, " + usuario.getNome() + "!");
             } else {
-                System.out.println("Usuário não encontrado. Criando conta...");
+                System.out.println("Usuário não encontrado. Criando nova conta...");
                 usuario = new Usuario(login, 0);
 
                 try {
@@ -67,13 +67,13 @@ public class Main {
         Preferencia preferencias = new Preferencia(usuario.getId());
         System.out.println("Tema atual: " + preferencias.getTema());
 
-        Cassino cassino = new Cassino("Cassino Royale");
+        Cassino cassino = new Cassino("Cassino UFRN");
         boolean executando = true;
 
         while (executando) {
             System.out.println("\n=== " + cassino.getNome().toUpperCase() + " ===");
             System.out.println("Usuário: " + usuario.getNome() + " | Saldo: R$ " + usuario.getSaldo() + " | Tema: " + preferencias.getTema());
-            System.out.println("1 - Jogar Dados");
+            System.out.println("1 - Jogar Iguana sortuda 1000");
             System.out.println("2 - Ver Saldo");
             System.out.println("3 - Ver Histórico");
             System.out.println("4 - Alterar Tema");

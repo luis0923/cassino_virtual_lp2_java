@@ -10,7 +10,7 @@ public class Preferencia {
         try (FileWriter escritor = new FileWriter(ARQUIVO)) {
             escritor.write(nome);
         } catch (IOException e) {
-            // falha silenciosa proposital (uso simples)
+
         }
     }
 
